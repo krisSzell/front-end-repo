@@ -1,0 +1,82 @@
+.fa-marketing {
+    color: #BD9B2F;
+    font-size: 4em;
+    padding: 10px;
+}
+
+.fa-featurette-icon {
+    padding-top: 15%;
+    color: #BD9B2F;
+    font-size: 8em;
+}
+
+.fa-featurette-icon-sm {
+    padding-top: 10%;
+    color: #BD9B2F;
+    font-size: 6em;
+}
+
+.fa-featurette-detail {
+    color: #BD9B2F;
+    font-size: 3em;
+}
+
+.col-marketing p {
+    color: #C6B68B;
+    padding: 0 5%;
+}
+
+
+@media (min-width: 768px) {
+
+    .fa-marketing {
+        padding-top: 10%;
+        font-size: 5em;
+    }
+
+    .fa-featurette-detail {
+        font-size: 4em;
+    }
+
+    .fa-featurette-icon {
+        padding-top: 30%;
+        font-size: 11em;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .fa-marketing {
+        padding-top: 10%;
+        font-size: 7em;
+    }
+
+    .fa-featurette-detail {
+        font-size: 6em;
+    }
+
+    .fa-featurette-icon {
+        padding-top: 25%;
+        font-size: 14em;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .fa-marketing {
+        padding-top: 10%;
+        font-size: 10em;
+    }
+
+    .fa-featurette-detail {
+        font-size: 7em;
+    }
+
+    .fa-featurette-icon {
+        padding-top: 20%;
+        font-size: 16em;
+    }
+
+}

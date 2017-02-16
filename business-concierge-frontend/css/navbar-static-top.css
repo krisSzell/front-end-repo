@@ -1,0 +1,160 @@
+body {
+  background-color: #0f0f0f;
+}
+
+.modal-footer {
+  border-top: 1px solid #BD9B2F;
+}
+
+footer a {
+  color: #BD9B2F;
+}
+
+footer #author {
+  color: #C6B68B;
+}
+
+.navbar-fixed-width {
+  border: 1px solid #BD9B2F;
+  border-top: none;
+  background: #000;
+  opacity: .9;
+}
+
+@media all and (min-width: 768px) {
+  .navbar-fixed-width {
+    width: 720px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .navbar-fixed-width {
+    width: 940px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+}
+
+@media all and (min-width: 1200px) {
+  .navbar-fixed-width {
+    width: 1140px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+}
+
+#nav-brandname {
+  padding: 14px 20px;
+  color: #BD9B2F;
+  font-size: 3.2em;
+  cursor: default;
+  border: none;
+}
+
+#navbar-links a {
+  color: #BD9B2F;
+}
+
+.navbar-toggle span {
+  background-color: #BD9B2F;
+}
+
+#navbar-links {
+  margin-right: 1px;
+}
+
+#navbar-links li a:hover {
+  color: #C6B68B;
+  border-left: 1px solid #BD9B2F;
+  border-right: 1px solid #BD9B2F;
+  border-bottom: none;
+  border-top: none;
+  background-color: transparent;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #C6B68B;
+  background:none;
+  border-left: 1px solid #BD9B2F;
+  border-right: 1px solid #BD9B2F;
+  border-bottom: none;
+  border-top: none;
+}
+
+.main-area {
+  margin-top: 70px;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .main-area {
+    margin-top: 50px;
+  }
+
+  .navbar .nav > .active > a,
+  .navbar .nav > .active > a:hover,
+  .navbar .nav > .active > a:focus {
+    background: white;
+    border: none;
+  }
+
+  #navbar-links li a:hover {
+    border: none;
+    background: white;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
