@@ -1,0 +1,123 @@
+body {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    font-family: 'Source Sans Pro';
+    background: url("../images/MyWebsiteBg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* TOP MENU ;start; */
+
+.top-menu {
+    position: fixed;
+    z-index: 1;
+    top: -200px;
+    height: 200px;
+    width: 100%;
+    background-color: #C0E4D8;
+    opacity: .7;
+    transition: transform .3s cubic-bezier(.76,.96,.84,.99);
+}
+
+.open {
+    -ms-transform: translate(0, 200px); /* IE 9 */
+    -webkit-transform: translate(0, 200px); /* Chrome, Safari, Opera */
+    transform: translate(0, 200px);
+    transition: transform .3s cubic-bezier(.76,.96,.84,.99);
+}
+
+.top-menu--trigger-btn {
+    position: absolute;
+    z-index: 1000;
+    bottom: -40px;
+    left: calc(50% - 35px);
+    color: #C0E4D8;
+    border: 1px solid #C0E4D8;
+    border-top: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 0 0 50% 50%;
+    padding-top: 0;
+    height: 40px;
+    width: 70px;
+}
+.top-menu--trigger-btn:hover {
+    animation: pulse 2s linear infinite;
+}
+.top-menu--trigger-btn:focus {
+    outline: none;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* TOP MENU ;end; */
+
+#home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+.img-face {
+    height: 40vh;
+    margin-left: -30px;
+}
+.about-me {
+    position: absolute;
+    height: 50%;
+    top: 25%;
+    left: 20%;
+    font-family: 'Lato', sans-serif;
+    color: #C0E4D8;
+}
+.about-me h1,
+.about-me h2 {
+    font-weight: 300;
+}
+
+.social-media-icons {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    height: 40vh;
+    top: 30vh;
+    width: 100px;
+}
+.social-media-icons div {
+    margin-bottom: 40%;
+    padding-left: 20px;
+}
+.social-media-icons a {
+    font-size: 3em;
+    color: #C0E4D8;
+    text-shadow: 2px 3px 3px #1f1f1f;
+}
+
+.social-media-icons i:hover{
+    animation: pulse 2s linear infinite;
+}
+
+.social-media-icons i.fa-codepen {
+    margin-left: -5px;
+}
+
+
