@@ -141,17 +141,17 @@
         <div class="col-sm-4 col-md-4 col-featurette">
           <i class="fa fa-line-chart fa-featurette-detail text-center"></i>
           <h2 class="featurette-heading-sm">Business plans</h2>
-          <a id="business-plans-fadein-btn" class="btn btn-default btn-featurette-detail">View details &raquo;</a>
+          <a href="#business-plans" id="business-plans-fadein-btn" class="btn btn-default btn-featurette-detail">View details &raquo;</a>
         </div>
         <div class="col-sm-4 col-md-4 col-featurette">
           <i class="fa fa-window-restore fa-featurette-detail text-center"></i>
           <h2 class="featurette-heading-sm">Websites</h2>
-          <a id="websites-fadein-btn" class="btn btn-default btn-featurette-detail">View details &raquo;</a>
+          <a href="#websites" id="websites-fadein-btn" class="btn btn-default btn-featurette-detail">View details &raquo;</a>
         </div>
         <div class="col-sm-4 col-md-4 col-featurette">
           <i class="fa fa-black-tie fa-featurette-detail text-center"></i>
           <h2 class="featurette-heading-sm">Logos</h2>
-          <p><a id="logos-fadein-btn" class="btn btn-default btn-featurette-detail">View details &raquo;</a></p>
+          <p><a href="#logos" id="logos-fadein-btn" class="btn btn-default btn-featurette-detail">View details &raquo;</a></p>
         </div>
       </div>
 
@@ -374,12 +374,16 @@
     <script src="js/jquery-easing.min.js"></script>
     <script src="js/scrolling-easy.js"></script>
     <script>
-    //Click on any li in ul with class 'navbar-nav'
-    $('ul.navbar-nav li').click(function(e) {
-      var $this = $(this); // declare variable for current li that we click
-      $('ul.navbar-nav').find('li.active').last().removeClass('active') //find all li that class class active and remove
-      $this.addClass('active'); //add 'active' class to current li.
-    });
+      // Do jQuery functions on document.ready state
+      $(function(){
+        //Click on any li in ul with class 'navbar-nav'
+        $('ul.navbar-nav li').click(function(e) {
+          var $this = $(this); // declare variable for current li that we click
+          //$('ul.navbar-nav').find('li.active').last().removeClass('active'); //find all li that class class active and remove
+          $('ul.navbar-nav li.active').removeClass('active'); // the same without find() and last()
+          $this.addClass('active'); //add 'active' class to current li.
+        });
+      });
   </script>
   <script src="js/jquery-fading.js"></script>
   </body>

@@ -1,5 +1,10 @@
 @font-face {
-  font-family: "Palace Script MT";
+    /*
+    Not enaught formats, use font-face generator e.g.
+    https://www.fontsquirrel.com/
+    */
+
+    font-family: "Palace Script MT";
   src: url('../fonts/PALSCRI.TTF') format("truetype");
   font-family: "Expletus Sans";
   src: url('../fonts/ExpletusSans-Regular.ttf') format("truetype");

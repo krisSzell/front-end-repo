@@ -55,6 +55,8 @@ footer #author {
 }
 
 #navbar-links a {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
   color: #BD9B2F;
 }
 
@@ -67,14 +69,11 @@ footer #author {
 }
 
 #navbar-links li a:hover {
-  color: #C6B68B;
-  border-left: 1px solid #BD9B2F;
-  border-right: 1px solid #BD9B2F;
-  border-bottom: none;
-  border-top: none;
   background-color: transparent;
 }
 
+#navbar-links li a:hover,
+#navbar-links li.active a,
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
